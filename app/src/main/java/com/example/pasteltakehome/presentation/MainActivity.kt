@@ -1,4 +1,4 @@
-package com.example.pasteltakehome
+package com.example.pasteltakehome.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

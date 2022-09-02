@@ -7,11 +7,7 @@ import com.example.pasteltakehome.data.remote.models.Article
 @Database(
     entities = [Article::class], version = 1, exportSchema = false
 )
-abstract class NewsDatabase : RoomDatabase() {
+abstract class NewsArticleDatabase : RoomDatabase() {
 
     abstract fun newsArticleDao() : NewsArticleDao
-
-    companion object {
-        var DATABASE_NAME: String = "news_db"
-    }
 }

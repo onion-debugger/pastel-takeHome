@@ -67,8 +67,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideNewsArticleRepository(apiService: NewsApiService,
-                                     database: NewsArticleDatabase,
+    fun provideNewsArticleRepository(apiService: NewsApiService, database: NewsArticleDatabase,
     @Dispatcher(ResourceDispatcher.IO) ioDispatcher: CoroutineDispatcher): Repository {
         return RepositoryImpl(apiService, database, ioDispatcher)
     }
